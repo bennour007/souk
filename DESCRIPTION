@@ -6,11 +6,12 @@ Description: Simulates players who specialise, swap goods and invest their
     players, groups, markets and events are set separately, and each day is
     a schedule of steps that can be replaced or extended.
 Version: 0.1.0
-Authors@R: c(
-    person(
-      "Bennour", "Mohamed Hsin"
-    )
-  )
+Authors@R: 
+      person(
+        "Bennour", "Mohamed Hsin",
+        email = "hsin.bennour@gmail.com",
+        role  = c("aut", "cre")
+      )
 License: MIT + file LICENSE
 Encoding: UTF-8
 LazyData: true

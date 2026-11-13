@@ -11,12 +11,20 @@ The package has four layers. [set_rules()] holds every parameter.
 ([default_schedule()]), each built from decisions that players or groups
 make. [run_village()] plays many days and records them.
 }
-\author{
-\strong{Maintainer}: 
-
-Other contributors:
+\seealso{
+Useful links:
 \itemize{
-  \item Bennour Mohamed Hsin
+  \item \url{https://github.com/bennour007/souk}
+  \item Report bugs at \url{https://github.com/bennour007/souk/issues}
+}
+
+}
+\author{
+\strong{Maintainer}: Bennour Mohamed Hsin \email{hsin.bennour@gmail.com}
+
+Authors:
+\itemize{
+  \item Bennour Mohamed Hsin \email{hsin.bennour@gmail.com}
 }
 
 }
