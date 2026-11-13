@@ -1,0 +1,27 @@
+Package: souk
+Type: Package
+Title: Trade, Groups and Institutions in a Simulated Village
+Description: Simulates players who specialise, swap goods and invest their
+    free time, and the groups they form to protect their trade. Rules for
+    players, groups, markets and events are set separately, and each day is
+    a schedule of steps that can be replaced or extended.
+Version: 0.1.0
+Authors@R: c(
+    person(
+      "Bennour", "Mohamed Hsin"
+    )
+  )
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+Suggests: 
+    testthat (>= 3.0.0)
+Config/testthat/edition: 3
+Depends: 
+    R (>= 4.1.0)
+Imports: 
+    dplyr (>= 1.1.0),
+    purrr (>= 1.0.0),
+    tibble,
+    withr
+Config/roxygen2/version: 8.1.0
