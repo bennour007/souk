@@ -60,3 +60,14 @@ test_that("an outsider pays the tax to a member of a taxing group", {
   expect_equal(v$players$free, c(10, 9.5))      # the member is capped at 10
   expect_no_error(check_village(v, rules))
 })
+
+
+test_that("members pay dues", {
+  rules <- set_rules(groups = list(on = TRUE, dues = 0.5))
+  v     <- two_traders()
+  v$groups        <- tibble::tibble(id = 1L, founded = 1L, tax = FALSE)
+  v$players$group <- c(1L, 1L)
+  v <- to_market(v, rules)
+  expect_equal(v$today$inside, c(1, 1))
+  expect_equal(v$players$free, c(9.5, 9.5))     # 12 minus 2 hours of work minus dues
+})

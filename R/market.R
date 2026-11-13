@@ -146,7 +146,8 @@ step_market <- function(v, rules, rounds = market_rounds) {
   n_outside <- rowSums(outside)
   swapping  <- rules$market$swap_cost * n_outside +
     rules$market$swap_cost_group * n_inside
-  balance   <- rules$world$day_length - rowSums(hours) - swapping -
+  dues     <- rules$groups$dues * !is.na(p$group)           # members give time to the group
+  balance  <- rules$world$day_length - rowSums(hours) - swapping - dues -
     tax_paid + tax_received
 
   v$today <- c(v$today, list(

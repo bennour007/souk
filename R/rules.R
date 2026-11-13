@@ -24,7 +24,8 @@
 #'     \item{`market`}{`swap_cost`, `swap_cost_group`: hours one swap takes on
 #'       the open market and inside a group.}
 #'     \item{`groups`}{`on`: whether groups exist. `found`: chance that a
-#'       player outside a group founds one, on founding days. `found_every`,
+#'       player outside a group founds one, on founding days.
+#'       `dues`: hours a member gives to the group each day.`found_every`,
 #'       `found_from`: founding happens every so many days, from this day.
 #'       `max_same`: most makers of one good a group accepts. `beta`: gain in
 #'       efficiency per swap inside the group.}
@@ -67,7 +68,7 @@ set_rules <- function(...) {
     player    = list(revise = 0.2),
     market    = list(swap_cost = 0, swap_cost_group = 0),
     groups    = list(on = FALSE, found = 0.001, found_every = 5, found_from = 10,
-                     max_same = 1, beta = 0.001),
+                     max_same = 1, beta = 0.001, dues = 0),
     tax       = list(on = FALSE, rate = 0.5, vote_every = 5, disturbance = 0.1,
                      voting = "majority"),
     drought   = list(on = FALSE, hours = 8, length = 3, p = 0, groups_needed = 3),

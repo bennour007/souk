@@ -23,7 +23,8 @@ rules are:
   \item{`market`}{`swap_cost`, `swap_cost_group`: hours one swap takes on
     the open market and inside a group.}
   \item{`groups`}{`on`: whether groups exist. `found`: chance that a
-    player outside a group founds one, on founding days. `found_every`,
+    player outside a group founds one, on founding days.
+    `dues`: hours a member gives to the group each day.`found_every`,
     `found_from`: founding happens every so many days, from this day.
     `max_same`: most makers of one good a group accepts. `beta`: gain in
     efficiency per swap inside the group.}
