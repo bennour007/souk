@@ -3,7 +3,7 @@ Type: Package
 Title: Trade, Groups and Institutions in a Simulated Village
 Description: Simulates players who specialise, swap goods and invest their
     free time, and the groups they form to protect their trade. Rules for
-    players, groups, markets and events are set separately, and each day is
+    players, groups, markets and events are set separately in a modular way, and each day is
     a schedule of steps that can be replaced or extended.
 Version: 0.1.0
 Authors@R: 
